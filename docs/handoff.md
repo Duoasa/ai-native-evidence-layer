@@ -4,7 +4,7 @@ Updated / 更新：2026-08-28 Asia/Shanghai
 Workspace / 工作区：`/Users/sukduoasa/Documents/ChatGPT/Research`
 Branch / 分支：`main`
 Production baseline / 生产基线：None / 无
-Current development identity / 当前开发标识：`0.0.0` bootstrap
+Current development identity / 当前开发标识：`0.0.0` bootstrap; initial public baseline `171dc13`
 Current objective / 当前目标：Publish and verify the English-first bilingual bootstrap repository. / 发布并验证英文优先的双语 Bootstrap 仓库。
 
 ## Release entry / 发布入口
@@ -24,6 +24,8 @@ No version has been released. See [CHANGELOG.md](../CHANGELOG.md).
 | Check / 检查 | Result / 结果 | Evidence / 证据 |
 |---|---|---|
 | Public repository creation / 公开仓库创建 | Verified / 已验证 | GitHub displays `Duoasa/ai-native-evidence-layer` as Public / GitHub 将 `Duoasa/ai-native-evidence-layer` 显示为 Public |
+| Initial push and presentation / 首次推送与呈现 | Verified / 已验证 | Commit [`171dc13`](https://github.com/Duoasa/ai-native-evidence-layer/commit/171dc135547b1c8c4b8a82709d986ed7c0099c3f); English README default; Apache-2.0 detected / Commit `171dc13`；默认英文 README；识别 Apache-2.0 |
+| Public CI / 公开 CI | Verified / 已验证 | [CI run 33154204854](https://github.com/Duoasa/ai-native-evidence-layer/actions/runs/33154204854) succeeded in 13 seconds / CI Run 33154204854 在 13 秒内成功 |
 | Full local gate / 完整本地门禁 | Verified / 已验证 | `npm run check`: 5 schemas, 2 examples, 16 bilingual pairs, 39 Markdown files, 6/6 tests, 5 reproducible artifacts / 5 个 Schema、2 个示例、16 组双语文档、39 个 Markdown 文件、6/6 测试、5 个可重现制品 |
 | GitHub configuration syntax / GitHub 配置语法 | Verified / 已验证 | 7 YAML files parsed locally / 本地解析 7 个 YAML 文件 |
 | Repository hygiene / 仓库卫生 | Verified / 已验证 | No secret/debug placeholder matches and no trailing whitespace / 无密钥或调试占位符匹配，无行尾空白 |

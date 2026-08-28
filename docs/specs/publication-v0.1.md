@@ -3,7 +3,7 @@
 [简体中文](publication-v0.1.zh-CN.md) | English
 
 ID: PUBLICATION-001
-Status: Implemented; remote verification pending initial push
+Status: Implemented and remotely verified
 Baseline: Locally verified `0.0.0` bootstrap repository
 Updated: 2026-08-28
 Governing rules: [AGENTS.md](../../AGENTS.md)
@@ -34,6 +34,13 @@ Publish the bootstrap repository at [Duoasa/ai-native-evidence-layer](https://gi
 2. Run `npm run check` and the repository hygiene audit.
 3. Push the reviewed initial commit to `origin/main`.
 4. Inspect the public repository as served by GitHub and confirm visibility, English README, Apache-2.0 license detection, committed generated artifacts, and CI execution.
+
+Remote verification completed on 2026-08-28:
+
+- GitHub displayed the repository as Public with `main` as the default branch.
+- Commit [`171dc13`](https://github.com/Duoasa/ai-native-evidence-layer/commit/171dc135547b1c8c4b8a82709d986ed7c0099c3f) was served with the English README, Chinese counterpart, generated artifacts, and Apache-2.0 license detection.
+- [CI run 33154204854](https://github.com/Duoasa/ai-native-evidence-layer/actions/runs/33154204854) completed successfully in 13 seconds.
+- GitHub showed no tags, releases, or packages.
 
 ## Recovery
 

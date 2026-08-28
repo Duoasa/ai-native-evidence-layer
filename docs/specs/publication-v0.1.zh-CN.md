@@ -3,7 +3,7 @@
 简体中文 | [English](publication-v0.1.md)
 
 ID：PUBLICATION-001
-状态：已实现；等待首次推送后的远程验证
+状态：已实现并通过远程验证
 基线：已通过本地验证的 `0.0.0` Bootstrap 仓库
 更新：2026-08-28
 治理规则：[AGENTS.md](../../AGENTS.md)
@@ -34,6 +34,13 @@ ID：PUBLICATION-001
 2. 执行 `npm run check` 与仓库卫生审计；
 3. 将经过审核的首个提交推送到 `origin/main`；
 4. 检查 GitHub 提供的公开仓库，确认可见性、英文 README、Apache-2.0 许可识别、已提交生成制品与 CI 执行情况。
+
+已于 2026-08-28 完成远程验证：
+
+- GitHub 将仓库显示为 Public，默认分支为 `main`；
+- Commit [`171dc13`](https://github.com/Duoasa/ai-native-evidence-layer/commit/171dc135547b1c8c4b8a82709d986ed7c0099c3f) 已公开展示英文 README、中文对应版本、生成制品，并正确识别 Apache-2.0 许可；
+- [CI Run 33154204854](https://github.com/Duoasa/ai-native-evidence-layer/actions/runs/33154204854) 在 13 秒内成功完成；
+- GitHub 显示没有 Tag、Release 或 Package。
 
 ## 恢复
 
