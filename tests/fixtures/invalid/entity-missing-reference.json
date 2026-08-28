@@ -1,0 +1,21 @@
+{
+  "schema_version": "0.1.0",
+  "id": "tests.example/missing-reference",
+  "type": "test.entity",
+  "labels": {
+    "en": "Invalid test entity"
+  },
+  "canonical_uri": "https://example.org/invalid-entity",
+  "claims": [
+    {
+      "id": "claim-without-evidence",
+      "subject_id": "tests.example/missing-reference",
+      "predicate": "capability.available",
+      "value": true,
+      "status": "verified",
+      "method": "human_review",
+      "observed_at": "2026-08-28T00:00:00Z",
+      "references": []
+    }
+  ]
+}

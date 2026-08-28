@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1.0",
+  "node_id": "ai-native-evidence-layer/research-sources-pilot",
+  "status": "proposed",
+  "labels": {
+    "en": "Research Information Sources Pilot",
+    "zh-CN": "科研信息源试点"
+  },
+  "description": "A proposed narrow pilot. No real catalog data has been approved or released.",
+  "maintainers": [
+    {
+      "name": "Project maintainer"
+    }
+  ],
+  "license": "UNDECIDED"
+}

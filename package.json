@@ -1,0 +1,27 @@
+{
+  "name": "ai-native-evidence-layer",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Open specifications and reference tooling for an AI-native distributed web knowledge and evidence layer.",
+  "homepage": "https://github.com/Duoasa/ai-native-evidence-layer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duoasa/ai-native-evidence-layer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Duoasa/ai-native-evidence-layer/issues"
+  },
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "npm": ">=11.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "npm run validate && npm test && npm run build && npm run verify:generated",
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "verify:generated": "node scripts/verify-generated.mjs"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": "0.1.0",
+  "id": "example.org/research-source",
+  "type": "information_source.research",
+  "labels": {
+    "en": "Example Research Source",
+    "zh-CN": "示例科研信息源"
+  },
+  "descriptions": {
+    "en": "A synthetic entity used only to demonstrate the draft evidence model.",
+    "zh-CN": "仅用于演示证据模型草案的合成实体。"
+  },
+  "canonical_uri": "https://example.org/research-source",
+  "claims": [
+    {
+      "id": "claim-access-public",
+      "subject_id": "example.org/research-source",
+      "predicate": "access.public",
+      "value": true,
+      "status": "asserted",
+      "method": "publisher_statement",
+      "observed_at": "2026-08-28T00:00:00Z",
+      "qualifiers": {
+        "environment": "example-only"
+      },
+      "references": [
+        {
+          "id": "ref-example-access-doc",
+          "source_type": "primary",
+          "locator": {
+            "url": "https://example.org/docs/access",
+            "title": "Synthetic access documentation"
+          },
+          "publisher": {
+            "name": "Example Organization"
+          },
+          "retrieved_at": "2026-08-28T00:00:00Z",
+          "notes": "Reserved example.org content; not a production claim."
+        }
+      ]
+    }
+  ]
+}

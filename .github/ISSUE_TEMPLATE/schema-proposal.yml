@@ -1,0 +1,56 @@
+name: Schema proposal / Schema 提案
+description: Propose an interoperable contract change with migration impact. / 提议包含迁移影响的互操作契约变更。
+title: "[Schema]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and use case / 问题与用例
+      description: Describe the real interoperability problem, not only a preferred shape. / 描述真实的互操作问题，而不只是偏好的数据形式。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed contract / 建议契约
+      description: Show fields, constraints, states, and a minimal example. / 给出字段、约束、状态和最小示例。
+      render: json
+    validations:
+      required: true
+  - type: dropdown
+    id: compatibility
+    attributes:
+      label: Compatibility / 兼容性
+      options:
+        - Backward compatible / 向后兼容
+        - Breaking change / 破坏性变更
+        - Unknown; needs analysis / 未知，需分析
+    validations:
+      required: true
+  - type: textarea
+    id: migration
+    attributes:
+      label: Migration and failure semantics / 迁移与失败语义
+      description: Explain how existing producers and consumers detect, migrate, or reject the change. / 说明现有生产者和消费者如何检测、迁移或拒绝变更。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered / 已考虑方案
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Implementations or evidence / 实现或证据
+      description: Link prototypes, standards, datasets, or issue examples when available. / 如有，请链接原型、标准、数据集或问题样例。
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks / 确认
+      options:
+        - label: I considered privacy, security, licensing, and vendor neutrality. / 我已考虑隐私、安全、许可和厂商中立性。
+          required: true
+        - label: I agree to follow the Code of Conduct. / 我同意遵守行为准则。
+          required: true

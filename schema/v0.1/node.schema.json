@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ai-native-evidence-layer:schema:node:0.1",
+  "title": "Evidence node metadata",
+  "description": "Discovery and ownership metadata for an independently operated evidence node.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "node_id", "status", "labels", "maintainers", "license"],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "node_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:/-]{2,255}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["proposed", "active", "paused", "deprecated", "withdrawn"]
+    },
+    "labels": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 300
+      }
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "maintainers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "catalog_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "changes_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9.-]+/[a-zA-Z0-9._-]+$"
+      },
+      "additionalProperties": true
+    }
+  }
+}

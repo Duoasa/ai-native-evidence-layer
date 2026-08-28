@@ -1,0 +1,69 @@
+name: Bug report / 缺陷报告
+description: Report a reproducible problem in the specifications or tooling. / 报告规格或工具中可复现的问题。
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the project. Do not include secrets, exploit details, or private personal data.
+        感谢你帮助改进项目。请勿提交密钥、漏洞利用细节或私人个人数据。
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary / 问题摘要
+      description: Describe the problem and why it matters. / 描述问题及其影响。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction / 复现步骤
+      description: Provide the smallest reproducible input and exact commands. / 提供最小可复现输入和准确命令。
+      placeholder: |
+        1. Use commit ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior / 预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior / 实际行为
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Revision or version / 提交或版本
+      description: Commit SHA, tag, or schema version. / Commit SHA、标签或 Schema 版本。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 环境
+      description: OS, Node.js version, npm version, and other relevant details. / 操作系统、Node.js、npm 版本及其他相关信息。
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized logs / 已脱敏日志
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks / 确认
+      options:
+        - label: I searched existing issues and found no duplicate. / 我已搜索现有 Issue，未发现重复问题。
+          required: true
+        - label: I removed secrets and private personal data. / 我已移除密钥和私人个人数据。
+          required: true
+        - label: I agree to follow the Code of Conduct. / 我同意遵守行为准则。
+          required: true

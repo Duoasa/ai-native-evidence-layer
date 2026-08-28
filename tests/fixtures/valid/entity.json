@@ -1,0 +1,33 @@
+{
+  "schema_version": "0.1.0",
+  "id": "tests.example/valid-entity",
+  "type": "test.entity",
+  "labels": {
+    "en": "Valid test entity"
+  },
+  "canonical_uri": "https://example.org/valid-entity",
+  "claims": [
+    {
+      "id": "claim-known-value",
+      "subject_id": "tests.example/valid-entity",
+      "predicate": "capability.available",
+      "value": true,
+      "status": "verified",
+      "method": "human_review",
+      "observed_at": "2026-08-28T00:00:00Z",
+      "references": [
+        {
+          "id": "ref-valid-source",
+          "source_type": "primary",
+          "locator": {
+            "url": "https://example.org/evidence"
+          },
+          "publisher": {
+            "name": "Example Publisher"
+          },
+          "retrieved_at": "2026-08-28T00:00:00Z"
+        }
+      ]
+    }
+  ]
+}

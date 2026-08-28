@@ -1,0 +1,38 @@
+name: Feature request / 功能建议
+description: Propose a capability for the open specifications, tooling, or pilots. / 为开放规格、工具或试点建议能力。
+title: "[Feature]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / 问题
+      description: What user, publisher, node operator, or AI consumer cannot do today? / 用户、发布者、节点运营者或 AI 消费者目前无法完成什么？
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome / 期望结果
+      description: Describe observable behavior and success criteria. / 描述可观察行为和成功标准。
+    validations:
+      required: true
+  - type: textarea
+    id: openness
+    attributes:
+      label: Interoperability and openness / 互操作性与开放性
+      description: Explain how the proposal remains portable, self-hostable, and vendor-neutral. / 说明提案如何保持可移植、可自托管和厂商中立。
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs / 替代方案与权衡
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks / 确认
+      options:
+        - label: I searched existing issues and proposals. / 我已搜索现有 Issue 和提案。
+          required: true
+        - label: I agree to follow the Code of Conduct. / 我同意遵守行为准则。
+          required: true

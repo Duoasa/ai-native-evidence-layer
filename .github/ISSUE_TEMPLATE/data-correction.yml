@@ -1,0 +1,64 @@
+name: Data correction / 数据纠错
+description: Propose an evidence-backed correction to a published claim. / 对已发布主张提出有证据支持的纠正。
+title: "[Data]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A correction must preserve provenance and disagreement. Do not submit private personal data.
+        纠错必须保留来源和分歧信息。请勿提交私人个人数据。
+  - type: input
+    id: entity
+    attributes:
+      label: Entity ID / 实体 ID
+      placeholder: source:example
+    validations:
+      required: true
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID or predicate / 主张 ID 或属性
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current published state / 当前发布状态
+      description: Include value, status, scope, and relevant dates. / 包含值、状态、适用范围与相关日期。
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed correction / 建议纠正
+      description: State the proposed value or status without erasing supported disagreement. / 给出建议值或状态，不要删除有证据支持的分歧。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Inspectable evidence / 可检查证据
+      description: Provide HTTPS source URLs, publisher, publication time when known, and retrieval time. / 提供 HTTPS 来源、发布者、已知的发布时间及检索时间。
+      placeholder: |
+        - URL:
+        - Publisher / 发布者:
+        - Published at / 发布时间:
+        - Retrieved at / 检索时间:
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Scope and impact / 范围与影响
+      description: Identify snapshots, derived artifacts, or users affected. / 指明受影响的快照、派生物或用户。
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and privacy / 权利与隐私
+      options:
+        - label: I may share this evidence and it contains no private personal data. / 我有权分享该证据，且其中不含私人个人数据。
+          required: true
+        - label: I agree to follow the Code of Conduct. / 我同意遵守行为准则。
+          required: true

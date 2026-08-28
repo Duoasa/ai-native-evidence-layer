@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "node_id": "example.org/reference-node",
+  "status": "proposed",
+  "labels": {
+    "en": "Example Evidence Node",
+    "zh-CN": "示例证据节点"
+  },
+  "description": "Synthetic node metadata for contract demonstration only.",
+  "maintainers": [
+    {
+      "name": "Example Maintainer",
+      "url": "https://example.org/maintainer"
+    }
+  ],
+  "license": "Apache-2.0"
+}

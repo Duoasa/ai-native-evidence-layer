@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ai-native-evidence-layer:schema:reference:0.1",
+  "title": "Evidence reference",
+  "description": "An inspectable source supporting or contextualizing a claim.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "source_type", "locator", "publisher", "retrieved_at"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._:-]{2,127}$"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": ["primary", "secondary", "tertiary", "community", "system"]
+    },
+    "locator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url"],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "fragment": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^(sha256|sha512):[a-f0-9]+$"
+        }
+      }
+    },
+    "publisher": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200
+        },
+        "entity_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._:/-]{2,255}$"
+        }
+      }
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "published_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "revision": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 300
+    },
+    "license": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "notes": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9.-]+/[a-zA-Z0-9._-]+$"
+      },
+      "additionalProperties": true
+    }
+  }
+}

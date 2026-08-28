@@ -1,0 +1,32 @@
+{
+  "format_version": "0.1.0",
+  "node_id": "ai-native-evidence-layer/research-sources-pilot",
+  "snapshot_date": "2026-08-28",
+  "entity_count": 0,
+  "artifacts": [
+    {
+      "path": "catalog.json",
+      "media_type": "application/json",
+      "bytes": 147,
+      "sha256": "fa69902fa39af8462833d7ad0aee00d23134721adade8fbdc35abb9fa8d143a4"
+    },
+    {
+      "path": "catalog.jsonl",
+      "media_type": "application/x-ndjson",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "changes.json",
+      "media_type": "application/json",
+      "bytes": 146,
+      "sha256": "24b6cf2a0f2e7d39262593f8cd61a3fdd92640d33ffcdbdbb7e4e7d7a83fc541"
+    },
+    {
+      "path": "node.json",
+      "media_type": "application/json",
+      "bytes": 418,
+      "sha256": "312350f8800f244bd360a530356a8d44ea7d987a30a97f23ab7023b2119b6fe8"
+    }
+  ]
+}
